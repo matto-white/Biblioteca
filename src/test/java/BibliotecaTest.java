@@ -62,6 +62,7 @@ class BibliotecaTest {
         tesserati.add(persona = new Persona("Mattia", "Bianco", "0987AB"));
         tesserati.addmatricole("0987AB");
         tesserati.add(persona = new Persona("Davide", "Giuliani", "1234AB"));
+        tesserati.addmatricole("1234AB");
 
         indiciCercaNomeMattia = new ArrayList<Integer>();
         indiciCercaNomeMattia.add(0);

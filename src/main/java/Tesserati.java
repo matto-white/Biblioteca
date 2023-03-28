@@ -61,21 +61,21 @@ public class Tesserati {
         switch(cosacercare){
             case "nome":
                 for(int i=0; i<size(); i++) {
-                    if (get(i).getNome().equals(paroladacercare)) {
+                    if (get(i).getNome().toLowerCase().equals(paroladacercare.toLowerCase())) {
                         indici.add(i);
                     }
                 }
                 break;
             case "cognome":
                 for(int i=0; i<size(); i++){
-                    if(get(i).getCognome().equals(paroladacercare)){
+                    if(get(i).getCognome().toLowerCase().equals(paroladacercare.toLowerCase())){
                         indici.add(i);
                     }
                 }
                 break;
             case "matricola":
                 for(int i=0; i<size(); i++){
-                    if(get(i).getMatricola().equals(paroladacercare)){
+                    if(get(i).getMatricola().toLowerCase().equals(paroladacercare.toLowerCase())){
                         indici.add(i);
                         i=size();
                     }

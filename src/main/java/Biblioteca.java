@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 public class Biblioteca {
     /** ArrayList Contenetnte la lista dei libri */
     public ArrayList<Libro> lista;
@@ -72,21 +72,21 @@ public class Biblioteca {
         switch(cosacercare){
             case "titolo":
                 for(int i=0; i<size(); i++) {
-                    if (get(i).getTitolo().equals(paroladacercare)) {
+                    if (get(i).getTitolo().toLowerCase().equals(paroladacercare.toLowerCase())) {
                         indici.add(i);
                     }
                 }
                 break;
             case "autore":
                 for(int i=0; i<size(); i++){
-                    if(get(i).getAutore().equals(paroladacercare)){
+                    if(get(i).getAutore().toLowerCase().equals(paroladacercare.toLowerCase())){
                         indici.add(i);
                     }
                 }
                 break;
             case "codice":
                 for(int i=0; i<size(); i++){
-                    if(get(i).getCodice().equals(paroladacercare)){
+                    if(get(i).getCodice().toLowerCase().equals(paroladacercare.toLowerCase())){
                         indici.add(i);
                         i=size();
                     }
