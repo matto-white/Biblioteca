@@ -58,7 +58,7 @@ public class Tesserati {
     public ArrayList<Integer> cerca(String cosacercare, String paroladacercare){
         boolean error=false;
         ArrayList<Integer> indici = new ArrayList<Integer>();
-        switch(cosacercare){
+        switch(cosacercare.toLowerCase()){
             case "nome":
                 for(int i=0; i<size(); i++) {
                     if (get(i).getNome().toLowerCase().equals(paroladacercare.toLowerCase())) {
