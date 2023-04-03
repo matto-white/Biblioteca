@@ -69,7 +69,7 @@ public class Biblioteca {
     public ArrayList<Integer> cerca(String cosacercare, String paroladacercare){
         boolean error=false;
         ArrayList<Integer> indici = new ArrayList<Integer>();
-        switch(cosacercare){
+        switch(cosacercare.toLowerCase()){
             case "titolo":
                 for(int i=0; i<size(); i++) {
                     if (get(i).getTitolo().toLowerCase().equals(paroladacercare.toLowerCase())) {
